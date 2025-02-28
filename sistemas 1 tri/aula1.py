@@ -14,8 +14,9 @@ elif (opcao == 3):
     numero_max = 50
     limite_tentativas = 10
 else: 
-    print("Opção inválida")
-
+    print("Opção inválida. Selecionado fácil automaticamente")
+    numero_max = 10
+    limite_tentativas = 3
 
 
 sorteio = random.randint(1, numero_max)

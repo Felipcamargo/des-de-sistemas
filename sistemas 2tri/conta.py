@@ -6,12 +6,28 @@ class Conta:
         self.__saldo = saldo
         self.__senha = senha
 
-    @property
-    def numero (self):
-        return self.__num
-
     def extrato(self):
         return self.__saldo
+
+    @property
+    def num(self):
+        return self.__num
+
+    @property
+    def agencia(self):
+        return self.__agencia
+
+    @property
+    def titular(self):
+        return self.__titular
+
+    @property
+    def senha(self):
+        return self.__senha
+
+    @senha.setter
+    def senha(self, newSenha):
+        self.__senha = newSenha
 
     def sacar(self, valor):
         if valor < 0 or valor > self.__saldo:
@@ -42,5 +58,4 @@ class Conta:
         else:
             self.__saldo -= valor
             conta.depositar(valor)
-            return True
-     
+            return True     

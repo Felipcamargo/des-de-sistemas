@@ -10,8 +10,8 @@ from conta import Conta
 
 
 
-conta1 = Conta(123, "10500-10", "Luiz", 7500.0, 1234)
-conta2 = Conta(123, "10500-11", "Guilerme", 1000.0, 1234)
+conta1 = Conta(123, "10544-10", "Felipe", 7500.0, 12334)
+conta2 = Conta(123, "105440-11", "Andrey", 1000.0, 1334)
 
 con = input('Digite o seu número da conta: ')
 
